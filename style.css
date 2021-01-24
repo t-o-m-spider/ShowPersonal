@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.background {
+	background: linear-gradient(rgb(2, 10, 20) 0%, rgb(56, 101, 132) 70%, rgb(195, 209, 219) 100%) no-repeat;
+}
+li {
+    list-style: none;
+}
+.FAQ {
+    background-color: #e6ecf0;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0 40px 0;
+}
+.FAQ-title {
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.FAQ-lists {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+.FAQ-list {
+    font-size: 13px;
+    position: relative;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+span {
+    color: #ccc;
+    position: absolute;
+    top: 5%;
+    left: 98%;
+}
+.answer {
+    display: none;
+}
