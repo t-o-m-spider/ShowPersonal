@@ -12,9 +12,6 @@ li {
 .Font-Std {
     font-family:'Hiragino Kaku Gothic Std';
 }
-.Customer {
-    display: none;
-}
 .Customer-title {
     color: white;
     margin-bottom: 30px;
@@ -31,6 +28,12 @@ li {
     margin-bottom: 20px;
     text-align: center;
 }
+.Slide {
+    display: none;
+}
+.Active {
+  display: block;
+}
 img {
     width: 80px;
     height: 80px;
@@ -46,6 +49,18 @@ img {
     font-size: 15px;
     margin: 0 auto;
     text-align: center;
+}
+.Slide-circles {
+    text-align: center;
+}
+.Circle {
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: rgb(125, 139, 153);
+    border-radius: 50%;
+    margin: 0px 5px;
 }
 .FAQ {
     background-color: white;
@@ -71,7 +86,7 @@ img {
 .answer {
     display: none;
 }
-span {
+.FAQ-mark {
     font-size: 17px;
     color: #ccc;
     position: absolute;
