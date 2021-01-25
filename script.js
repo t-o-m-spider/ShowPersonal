@@ -20,4 +20,12 @@ $(function() {
 	    }
 
 	});
+
+	$('#Reservation-show').click(function () {
+		$('#Reservation-modal').fadeIn("slow");
+	});
+
+	$('#Close-modal').click(function () {
+		$('#Reservation-modal').fadeOut();
+	})
 });
