@@ -1,29 +1,70 @@
 <!DOCTYPE html>
 <html lang="ja">　
 <head>
+
+	<!DOCTYPE html>
+<html lang="ja">
+<head>
 	<meta charset="utf-8">
+
+	<!-- Viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!-- CSS -->
 	<link rel="stylesheet" href="style.css">
+
+	<!-- レスポンシブ -->
+	<link rel="stylesheet" href="responsive.css">
+
+	<!-- jQuery読み込み -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<!-- タイトル -->
 	<title>Syoutarou Yoshihuji</title>
+
+	<!-- 説明 -->
 	<meta name="discription" content="パーソナルトレーナ　吉藤翔太郎のWebサイトです">
+
+	<!-- FontAwesome読み込み -->
+	<script src="https://kit.fontawesome.com/4a97e7c20a.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 	<main>
+		<div class="Customer">
+			<h1 class="Customer-title Font-ProN">お客様の声</h1>
+			<div class="Customer-voices">
+				<div class="Customer-voice Font-ProN">
+					<img src="face.jpeg">
+					<h2 class="Person">25歳　大学生</h2>
+					<p class="Voice">ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。</p>
+				</div>
+				<div class="Customer-voice Font-ProN">
+					<img src="face.jpeg">
+					<h2 class="Person">25歳　会社員</h2>
+					<p class="Voice">ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。</p>
+				</div>
+				<div class="Customer-voice Font-ProN">
+					<img src="face.jpeg">
+					<h2 class="Person">25歳　自営業</h2>
+					<p class="Voice">ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。ここにレビューが入ります。</p>
+				</div>
+			</div>
+		</div>
 		<div class="FAQ">
-			<h1 class="FAQ-title">FAQ</h1>
+			<h1 class="FAQ-title Font-StdN">FAQ</h1>
 			<ul class="FAQ-lists">
-				<li class="FAQ-list">
+				<li class="FAQ-list Font-ProN">
 					<h2 class="question">筋肉はつきますか？</h2>
 					<span>+</span>
 					<p class="answer">ものすごいつきます。。。</p>
 				</li>
-				<li class="FAQ-list">
+				<li class="FAQ-list Font-ProN">
 					<h2 class="question">モテますか？</h2>
 					<span>+</span>
 					<p class="answer">ものすごいモテます。。。</p>
 				</li>
-				<li class="FAQ-list">
+				<li class="FAQ-list Font-ProN">
 					<h2 class="question">ペアトレは今気になってる<br>
 					子を誘ってもいいですか？</h2>
 					<span>+</span>
@@ -32,6 +73,32 @@
 				</li>
 			</ul>
 		</div>
+		<div class="Reservation">
+			<!-- 予約ボタン -->
+			<div class="button Font-ProN" id="Reservation-show">予約する</div>
+			<!-- 予約フォーム背景 -->
+			<div class="Reservation-modal-overlay" id="Reservation-modal">
+				<!-- 予約フォーム本体 -->
+				<div class="Reservation-modal-body Font-ProN">ここには予約フォームが入ります
+					<!-- クローズボタン -->
+        			<i class="fa fa-times Close-button" id="Close-modal"></i>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script src="script.js"></script>
 </body>
 </html>
