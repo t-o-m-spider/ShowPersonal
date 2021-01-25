@@ -9,8 +9,8 @@ li {
 .Font-ProN {
     font-family:'Hiragino Maru Gothic ProN';
 }
-.Font-StdN {
-    font-family:'Hiragino Kaku Gothic StdN';
+.Font-Std {
+    font-family:'Hiragino Kaku Gothic Std';
 }
 .Customer-title {
     color: white;
@@ -19,7 +19,7 @@ li {
 }
 .Customer-voices {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
 }
 .Customer-voice {
     background: white;
@@ -45,7 +45,7 @@ img {
     text-align: center;
 }
 .FAQ {
-    background-color: #e6ecf0;
+    background-color: white;
     width: 100%;
     text-align: center;
     padding: 40px 0 40px 0;
