@@ -1,4 +1,6 @@
 $(function() {
+
+	// アコーディオン
 	$('.FAQ-list').click(function () {
 		const $answer = $(this).find('.answer');
 
@@ -21,6 +23,7 @@ $(function() {
 
 	});
 
+	// 予約モーダル
 	$('#Reservation-show').click(function () {
 		$('#Reservation-modal').fadeIn("slow");
 	});
@@ -28,4 +31,5 @@ $(function() {
 	$('#Close-modal').click(function () {
 		$('#Reservation-modal').fadeOut();
 	})
+
 });
