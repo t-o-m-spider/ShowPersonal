@@ -12,6 +12,9 @@ li {
 .Font-Std {
     font-family:'Hiragino Kaku Gothic Std';
 }
+.Customer {
+    display: none;
+}
 .Customer-title {
     color: white;
     margin-bottom: 30px;
