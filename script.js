@@ -32,4 +32,17 @@ $(function() {
 		$('#Reservation-modal').fadeOut();
 	})
 
+	// お客様の声　スライド
+	$('.index-btn').click(function () {
+		$('.Active').removeClass('Active');
+
+		const clickedIndex = $('.index-btn').index($(this));
+
+		$('.Slide').eq(clickedIndex).addClass('Active');
+
+		$('.Circle-active').removeClass('Circle-active');
+
+		$(this).addClass('Circle-active');
+	});
+
 });
