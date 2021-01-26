@@ -56,11 +56,14 @@ img {
 .Circle {
     display: inline-block;
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-color: rgb(125, 139, 153);
     border-radius: 50%;
     margin: 0px 5px;
+}
+.Circle-active {
+    background: white;
 }
 .FAQ {
     background-color: white;
