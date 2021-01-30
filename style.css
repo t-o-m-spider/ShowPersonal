@@ -6,6 +6,10 @@ body {
 li {
     list-style: none;
 }
+input,select {
+    outline: none;
+}
+
 .Font-ProN {
     font-family:'Hiragino Maru Gothic ProN';
 }
@@ -133,21 +137,54 @@ img {
 .Reservation-modal-body {
     position: relative;
     position: absolute;
-    top: 40%;
+    top: 25%;
     left: 0;
     right: 0;
     margin: auto;
     width: 90%;
     background-color: #e6ecf0;
-    padding: 20px 0 40px;
     border-radius: 10px;
-    height: 150px;
-    line-height: 150px;
+    height: 250px;
     text-align: center;
 }
 .Close-button {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 90%;
     font-size: 1.4em
  }
+ .Personal-menu {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+ }
+.Place {
+    position: absolute;
+    top: 37%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.Date {
+    position: absolute;
+    top: 54%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.Form-btn {
+    position: absolute;
+    top: 76%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 17%;
+    height: 12%;
+ }
+
+
+
+
+
