@@ -82,7 +82,28 @@
 			<!-- 予約フォーム背景 -->
 			<div class="Reservation-modal-overlay" id="Reservation-modal">
 				<!-- 予約フォーム本体 -->
-				<div class="Reservation-modal-body Font-ProN">ここには予約フォームが入ります
+				<div class="Reservation-modal-body Font-ProN">
+					<form class="Form-container">
+						<label class="Personal-menu" name="Menu">メニュー　　
+							<select required="">
+								<option></option>
+								<option>60分コース ￥6,000-</option>
+							</select>
+						</label>
+						<label class="Place" name="Place">ご希望の場所　
+							<select required="">
+								<option></option>
+								<option>渋谷（宮益坂）</option>
+								<option>恵比寿（西口駅前）</option>
+								<option>北参道（駅徒歩2分）</option>
+								<option>千駄ヶ谷（駅徒歩2分）</option>
+							</select>
+						</label>
+						<label class="Date" name="Date">ご希望のお日にち
+							<input type="date" required="">
+						</label>
+						<button class="Form-btn">送信</button>
+					</form>
 					<!-- クローズボタン -->
         			<i class="fa fa-times Close-button" id="Close-modal"></i>
 				</div>
