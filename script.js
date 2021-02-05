@@ -1,3 +1,20 @@
+// セレクタを取り込む
+const targetElement = document.querySelectorAll(".animationTarget");
+console.log("画面の高さ", window.innerHeight)
+// スクロールした時、常にtargetElementの高さを取得する
+document.addEventListener("scroll", function() {
+     for (let i = 0; i < targetElement.length; i++) {
+        const getElementDistance = targetElement[i].
+        // liの全体の高さの0.6の高さまでスクロールしたらshowクラスをつける
+        getBoundingClientRect().top +targetElement[i].clientHeight * .6
+        // 現在のブラウザの高さを取得する
+        if(window.innerHeight > getElementDistance) {
+            // i番目のliが見えた時点でshowというクラスをつける
+            targetElement[i].classList.add("show");
+        }
+    }
+})
+
 $(function() {
 
 	// アコーディオン
@@ -44,5 +61,4 @@ $(function() {
 
 		$(this).addClass('Circle-active');
 	});
-
 });
