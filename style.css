@@ -9,12 +9,56 @@ li {
 input,select {
     outline: none;
 }
-
 .Font-ProN {
     font-family:'Hiragino Maru Gothic ProN';
 }
 .Font-Std {
     font-family:'Hiragino Kaku Gothic Std';
+}
+main {
+    height: 500px;
+}
+main h1 {
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+}
+main img {
+    width: 50%;
+    border-radius: 10%;
+    display: block;
+    margin-right: 15px;
+    margin-left: auto;
+    opacity: 0;
+    transform: translate(20px, -20px);
+    transition: 1.5s;
+}
+main img.show {
+    opacity: 1;
+    transform: none;
+}
+.Text-container {
+    width: 50%;
+    background-color: white;
+    height: 220px;
+    border-radius: 10%;
+    opacity: 0;
+    transform: translate(-20px,-20px);
+    transition: 1.5s;
+}
+.Text-container.show {
+    opacity: 1;
+    transform: none;
+}
+.Profile {
+    position: relative;
+    text-align:center; 
+}
+
+.Text-container {
+    position: absolute;
+    top: 70%;
+    left: 5%;
 }
 .Customer-title {
     color: white;
@@ -38,7 +82,7 @@ input,select {
 .Active {
   display: block;
 }
-img {
+.Customer-voice img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
