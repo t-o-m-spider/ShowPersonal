@@ -31,17 +31,21 @@ header p {
   justify-content: center;
 }
 
+section.content {
+  margin-bottom: 150px;
+}
+
 section h1.contentName {
   color: white;
   text-align: center;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .iconBack {
   width: 50%;
-  height: 190px;
+  height: 200px;
   background-color: white;
-  border-radius: 10%;
+  border-radius: 20%;
   margin: 50px auto;
 }
 
@@ -63,6 +67,7 @@ header p {
 
 main {
   height: 500px;
+  margin-bottom: 150px;
 }
 
 main h1 {
