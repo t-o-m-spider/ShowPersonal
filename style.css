@@ -21,25 +21,54 @@ input, select {
 }
 
 header {
-  height: 300px;
-  color: white;
+  margin-bottom: 80px;
 }
 
-header p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+header img {
+  width: 375px;
+  height: 389px;
+  position:relative;
+  animation: imgAnimation 4s;
+}
+
+@keyframes imgAnimation {
+  0% {
+    opacity: 0;
+  }
+}
+
+header h1.contentName {
+  color: black;
+  background: white;
+  text-align: center;
+  font-size: 32px;
+  position:absolute;
+  top: 25%;
+  left: 0;
+  right: 0;
+  white-space: nowrap;
+  animation: titleAnimation 5s;
+}
+
+@keyframes titleAnimation {
+  0% {
+    opacity: 0;
+    letter-spacing: .2em;
+    transform: translateX(-100px);
+  }
+}
+
+section h2 {
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  text-align: center;
 }
 
 section.content {
   margin-bottom: 150px;
 }
 
-section h1.contentName {
-  color: white;
-  text-align: center;
-  font-size: 32px;
-}
 
 .iconBack {
   width: 50%;
@@ -61,12 +90,7 @@ section h1.contentName {
   text-align: center;
 }
 
-header p {
-  text-align: center;
-}
-
 main {
-  height: 500px;
   margin-bottom: 150px;
 }
 
@@ -116,6 +140,7 @@ main img.show {
 .Profile {
   position: relative;
   text-align: center;
+  margin-bottom: 100px;
 }
 
 .Text-container {
@@ -124,8 +149,13 @@ main img.show {
   left: 5%;
 }
 
+.customerContainer {
+  margin-bottom: 150px;
+}
+
 .Customer-title {
   color: white;
+  font-size: 32px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -151,14 +181,18 @@ main img.show {
   display: block;
 }
 
-.Customer-voice img {
+.Customer-voice i {
   width: 80px;
   height: 80px;
-  border-radius: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 20px;
+}
+
+.female {
+  color: pink;
+}
+.male {
+  color:skyblue;
 }
 
 .Person {
