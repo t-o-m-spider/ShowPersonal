@@ -130,7 +130,6 @@ header h1.contentName {
   background: white;
   font-size: 32px;
   text-align: center;
-  font-weight: 900;
   position:absolute;
   top: 25%;
   left: 0;
@@ -138,6 +137,7 @@ header h1.contentName {
   white-space: nowrap;
   animation: titleAnimation 5s;
   opacity: 1;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @keyframes titleAnimation {
