@@ -2,7 +2,10 @@ body {
   margin: 0;
   padding: 0;
   background: #386584;
-  -webkit-text-size-adjust: 100%;
+}
+
+.body {
+  font-size: 0;
 }
 
 li {
@@ -192,16 +195,17 @@ section h2 {
 }
 
 .iconBack {
-  width: 80%;
+  width: 85%;
   height: 500px;
   background-color: white;
   border-radius: 15px;
   margin: 50px auto;
 }
 
-.iconBack i {
+i.fa-dumbbell,i.fa-utensils,i.fa-hand-holding-medical {
   display: flex;
   justify-content: center;
+  font-size: 60px;
   padding-top: 35px;
 }
 
@@ -212,11 +216,12 @@ section h2 {
 }
 
 main {
-  margin-bottom: 150px;
+  margin-bottom: 30px;
 }
 
 main h1 {
   color: white;
+  font-size: 32px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -234,11 +239,17 @@ img.taroimg {
 
 main img.show {
   opacity: 1;
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 
-.Text-container {
+img.iconImg {
+  font-size: 16px;
+}
+p.content-text {
+  font-size: 16px;
+}
+
+.Profile-container {
   width: 50%;
   background-color: white;
   height: 220px;
@@ -250,7 +261,7 @@ main img.show {
   transition: 1.5s;
 }
 
-.Text-container.show {
+.Profile-container.show {
   opacity: 1;
   -webkit-transform: none;
           transform: none;
@@ -262,10 +273,34 @@ main img.show {
   margin-bottom: 200px;
 }
 
-.Text-container {
+h2.Profile-name {
+  font-size: 24px;
+}
+
+p.Profile-text {
+  font-size: 16px;
+}
+
+.Profile-container {
   position: absolute;
   top: 70%;
   left: 5%;
+}
+
+.step {
+  width: 85%;
+  margin: 0px auto;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 30px 13px;
+  letter-spacing: 0.02em;
+  border-radius: 30px;
+  font-size: 20px;
+}
+
+.step-lists {
+  padding: 0;
+  text-align: center;
 }
 
 .Customer-title {
@@ -276,7 +311,7 @@ main img.show {
 }
 
 .Customer-voices {
-  width: 80%;
+  width: 85%;
   margin: 0 auto 50px auto;
 }
 
@@ -298,9 +333,8 @@ main img.show {
 
 .Customer-voice i {
   width: 80px;
-  height: 80px;
-  align-items: center;
-  margin-top: 20px;
+  margin: 20px auto 0px auto;
+  font-size: 60px;
 }
 
 .female {
@@ -381,7 +415,8 @@ h2.Person {
   height: 100px;
 }
 
-.button {
+div.button {
+  font-size: 16px;
   text-align: center;
   width: 30%;
   margin: 50px auto 50px auto;
@@ -432,11 +467,11 @@ h2.Person {
   text-align: center;
 }
 
-.Close-button {
+i.Close-button {
   position: absolute;
   top: 5%;
   left: 90%;
-  font-size: 1.4em;
+  font-size: 27px;
 }
 
 .Personal-menu {
@@ -473,4 +508,3 @@ h2.Person {
   height: 12%;
   cursor: pointer;
 }
-/*# sourceMappingURL=style.css.map */
