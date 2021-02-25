@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	})
 	
+	// スクロールした時フワッと出す
+
 	// セレクタを取り込む
 	const targetElement = document.querySelectorAll(".animationTarget");
 	console.log("画面の高さ", window.innerHeight)
@@ -64,7 +66,7 @@ $(function() {
 	});
 
 	// 予約モーダル
-	$('#Reservation-show').click(function () {
+	$('.Reservation-show').click(function () {
 		$('#Reservation-modal').fadeIn("slow");
 	});
 
@@ -83,5 +85,29 @@ $(function() {
 		$('.Circle-active').removeClass('Circle-active');
 
 		$(this).addClass('Circle-active');
+	});
+
+	// ナビゲーションクリック時にスクロール移動
+	$(function() {
+
+		$('.Home-scroll').click(function() {
+			$("html,body").animate({scrollTop:0
+			},'1000');
+		});
+	
+		$('.About-scroll').click(function() {
+			$("html,body").animate({scrollTop:$('#About').offset().top -70
+			},'1000');
+		});
+	
+		$('.FAQ-scroll').click(function() {
+			$("html,body").animate({scrollTop:$('#FAQ').offset().top -100
+			},'1000');
+		});
+	
+		$('.Contact-scroll').click(function() {
+			$("html,body").animate({scrollTop:$('#Contact').offset().top -100
+			},'1000','ease-in-out');
+		});
 	});
 });
