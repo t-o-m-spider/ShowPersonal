@@ -29,7 +29,7 @@
 	<script src="https://kit.fontawesome.com/4a97e7c20a.js" crossorigin="anonymous"></script>
 	
 </head>
-<body>
+<body class="body">
 	<!-- スマートフォン用ヘッダー・ナビゲーション（ハンバーガーメニュー） -->
 	<nav class="forsp" id="forsp">
 		<div class="MenuButton" id="MenuButton">
@@ -52,7 +52,6 @@
 			</div>
 		</div>
 	</nav>
-
 	<header>
 		<img src="img/main.jpg">
 		<h1 class="contentName">SHOW PERSONAL</h1>
@@ -64,30 +63,46 @@
 				<i class="fas fa-dumbbell fa-4x" ></i>
 				<p class="iconName Font-ProN">ボディメイク</p>
 				<img class="iconImg" alt="ここにボディメイクの様子の写真が入ります">
-				<p>どんな効果が期待されるのか書きます</p>
+				<p class="content-text">どんな効果が期待されるのか書きます</p>
 			</div>
 			<div class="iconBack">
 				<i class="fas fa-utensils fa-4x"></i>
 				<p class="iconName Font-ProN">栄養学</p>
 				<img class="iconImg" alt="ここに栄養学に関する写真が入ります">
-				<p>どんな効果が期待されるのか書きます</p>
+				<p class="content-text">どんな効果が期待されるのか書きます</p>
 			</div>
 			<div class="iconBack">
 				<i class="fas fa-hand-holding-medical fa-4x" ></i>
 				<p class="iconName Font-ProN">鍼灸師</p>
 				<img class="iconImg" alt="ここに鍼灸師に関する写真が入ります">
-				<p>どんな効果が期待されるのか書きます</p>
+				<p class="content-text">どんな効果が期待されるのか書きます</p>
 			</div>
 		</section>
 		<div class="button Font-ProN Reservation-show">まずは無料カウンセリングから！</div>
 		<h1 class="Font-ProN" id="About">トレーナー紹介</h1>
 		<div class="Profile">
 			<img class="animationTarget taroimg" src="img/taro.jpeg" alt="">
-			<div class="Text-container Font-ProN animationTarget">
-				<h2>吉藤翔太郎</h2>
-				<p>ここに自己紹介、経歴が入ります。ここに自己紹介、経歴が入ります。ここに自己紹介、経歴が入ります。</p>
+			<div class="Profile-container Font-ProN animationTarget">
+				<h2 class="Profile-name">吉藤翔太郎</h2>
+				<p class="Profile-text">ここに自己紹介、経歴が入ります。ここに自己紹介、経歴が入ります。ここに自己紹介、経歴が入ります。</p>
 			</div>
 		</div>
+		<section>
+			<h1 class="Font-ProN">全体の流れ</h1>
+			<div class="step Font-ProN">
+				<ul class="step-lists">
+					<li class="step-list">カウンセリング</li>
+					<p>↓</p>
+					<li class="step-list">当日待ち合わせ</li>
+					<p>↓</p>
+					<li class="step-list">パーソナル実地</li>
+					<p>↓</p>
+					<li class="step-list">パーソナル終了</li>
+					<p>↓</p>
+					<li>解散</li>
+				</ul>
+			</div>
+		</section>
 	</main>
 	<section class="customerContainer">
 		<div class="Customer">
@@ -116,6 +131,7 @@
 			</div>
 		</div>
 	</section>
+		<!-- FAQアコーディオン -->
 		<div class="FAQ" id="FAQ">
 			<h1 class="FAQ-title Font-Std">FAQ</h1>
 			<ul class="FAQ-lists">
@@ -136,8 +152,8 @@
 				</li>
 			</ul>
 		</div>
+		<!-- お問い合わせ -->
 		<section class="contact-form">
-			
 		</section>
 		<div class="Reservation">
 			<!-- 予約ボタン -->
@@ -172,19 +188,6 @@
 				</div>
 			</div>
 		</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="script.js"></script>
 </body>
 </html>
