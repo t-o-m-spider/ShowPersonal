@@ -32,6 +32,7 @@ input, select {
   right: 5%;
   border-radius: 3px;
   z-index: 10;
+  box-shadow: 0px 0px 8px grey;
 }
 
 /* メニューボタンのライン */
@@ -57,6 +58,7 @@ input, select {
 /*メニューボタンをクリックした時のラインの位置*/
 .MenuButton.active {
   background:#386584;
+  box-shadow: none;
 }
 .MenuButton.active div:nth-of-type(1) {
 transform: rotate(45deg) translate(-50%, 0px);
@@ -103,13 +105,37 @@ background:white;
 /*	visibility: visible;*/
 	transform: translateY(0%);
 }
+
+ul.Menu-lists {
+  padding-left: 25px;
+}
+
 .Menu-list {
 	font-size: 23px;
   padding-top: 21px;
 }
 
+img.Instagram {
+  width: 30px;
+  margin: 10px 0 0 26px;
+}
+
+img.Twitter {
+  width: 30px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+img.youtube {
+  width: 26px;
+  padding: 6.5px;
+  margin-left: 8px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
 header {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 header img {
@@ -135,7 +161,7 @@ header h1.contentName {
   left: 0;
   right: 0;
   white-space: nowrap;
-  animation: titleAnimation 5s;
+  animation: titleAnimation 4s;
   opacity: 1;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -165,16 +191,11 @@ section h2 {
   text-align: center;
 }
 
-section.content {
-  margin-bottom: 130px;
-}
-
-
 .iconBack {
-  width: 50%;
-  height: 200px;
+  width: 80%;
+  height: 500px;
   background-color: white;
-  border-radius: 20%;
+  border-radius: 15px;
   margin: 50px auto;
 }
 
@@ -186,7 +207,7 @@ section.content {
 
 .iconName {
   font-size: 23px;
-  margin-top: 30px;
+  margin-top: 15px;
   text-align: center;
 }
 
@@ -200,16 +221,14 @@ main h1 {
   text-align: center;
 }
 
-main img {
+img.taroimg {
   width: 50%;
   border-radius: 10%;
   display: block;
   margin-right: 15px;
   margin-left: auto;
   opacity: 0;
-  -webkit-transform: translate(20px, -20px);
-          transform: translate(20px, -20px);
-  -webkit-transition: 1.5s;
+  transform:translate(20px, -20px);
   transition: 1.5s;
 }
 
@@ -240,17 +259,13 @@ main img.show {
 .Profile {
   position: relative;
   text-align: center;
-  margin-bottom: 250px;
+  margin-bottom: 200px;
 }
 
 .Text-container {
   position: absolute;
   top: 70%;
   left: 5%;
-}
-
-.customerContainer {
-  margin-bottom: 130px;
 }
 
 .Customer-title {
@@ -369,14 +384,14 @@ h2.Person {
 .button {
   text-align: center;
   width: 30%;
-  margin: 50px auto 0 auto;
-  padding: 15px 40px;
+  margin: 50px auto 50px auto;
+  white-space: nowrap;
+  padding: 18px 140px 18px 20px;
   background-color: #ffc500;
   cursor: pointer;
   opacity: 0.8;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 7px #ffaf00;
-          box-shadow: 0px 7px #ffaf00;
+  box-shadow: 0px 7px #ffaf00;
 }
 
 .button:hover {
