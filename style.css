@@ -16,10 +16,12 @@ input, select {
   outline: none;
 }
 
+/* 日本語フォント */
 .Font-ProN {
   font-family: 'Hiragino Maru Gothic ProN';
 }
 
+/* 英語フォント */
 .Font-Std {
   font-family: 'Hiragino Kaku Gothic Std';
 }
@@ -210,7 +212,7 @@ i.fa-dumbbell,i.fa-utensils,i.fa-hand-holding-medical {
 }
 
 .iconName {
-  font-size: 23px;
+  font-size: 25px;
   margin-top: 15px;
   text-align: center;
 }
@@ -301,6 +303,70 @@ p.Profile-text {
 .step-lists {
   padding: 0;
   text-align: center;
+}
+
+.step-list {
+  position: relative;
+
+}
+
+.stepImg {
+}
+
+.step-lists > li:nth-of-type(odd) > h2 {
+  color: black;
+  font-size: 28px;
+  margin: 0;
+  z-index: 7;
+  position: absolute;
+  top: 85%;
+  left: 4%;
+  font-family: system-ui;
+}
+
+.step-lists > li:nth-of-type(odd) > p {
+  position: absolute;
+  top: 108%;
+  left: 3%;
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.step-lists > li:nth-of-type(even) > h2 {
+  color: black;
+  font-size: 28px;
+  margin: 0;
+  z-index: 7;
+  position: absolute;
+  top: 86%;
+  right: 4%;
+  font-family: system-ui;
+}
+
+.step-lists > li:nth-of-type(even) > p {
+  position: absolute;
+  top: 110%;
+  left: 54%;
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.step-lists > p:nth-of-type(odd) {
+  margin: 60px auto 20px auto;
+  width: 85%;
+  font-size: 14px;
+  line-height: 2em;
+}
+
+.step-lists > p:nth-of-type(even) {
+  margin: 60px auto 20px auto;
+  width: 85%;
+  font-size: 14px;
+  line-height: 2em;
 }
 
 .Customer-title {
