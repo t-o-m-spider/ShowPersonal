@@ -122,19 +122,19 @@ ul.Menu-lists {
 
 img.Instagram {
   width: 30px;
-  margin: 10px 0 0 26px;
+  margin: 21px 0 0 26px;
 }
 
 img.Twitter {
   width: 30px;
   border-radius: 5px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 img.youtube {
   width: 26px;
   padding: 6.5px;
-  margin-left: 8px;
+  margin-left: 15px;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
@@ -198,7 +198,7 @@ section h2 {
 
 .iconBack {
   width: 85%;
-  height: 500px;
+  height: 420px;
   background-color: white;
   border-radius: 15px;
   margin: 50px auto;
@@ -215,6 +215,18 @@ i.fa-dumbbell,i.fa-utensils,i.fa-hand-holding-medical {
   font-size: 25px;
   margin-top: 15px;
   text-align: center;
+}
+
+.iconImg {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+}
+
+.content-text {
+    font-size: 18px;
+    text-align: center;
+    white-space: nowrap;
 }
 
 main {
@@ -245,9 +257,6 @@ main img.show {
 }
 
 img.iconImg {
-  font-size: 16px;
-}
-p.content-text {
   font-size: 16px;
 }
 
