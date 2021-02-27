@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">　
 <head>
@@ -27,8 +26,8 @@
 	<meta name="discription" content="パーソナルトレーナ　吉藤翔太郎のWebサイトです">
 
 	<!-- FontAwesome読み込み -->
-	<script src="https://kit.fontawesome.com/4a97e7c20a.js" crossorigin="anonymous"></script>
-	
+    <script src="https://kit.fontawesome.com/4a97e7c20a.js" crossorigin="anonymous"></script>
+    	
 </head>
 <body class="body">
 	<!-- スマートフォン用ヘッダー・ナビゲーション（ハンバーガーメニュー） -->
@@ -43,9 +42,10 @@
 			<div class="Spmenu" id="Spmenu">
 				<ul class="Menu-lists">
 					<li class="Menu-list Font-ProN Home-scroll">トップへ</li>
-					<li class="Menu-list Font-ProN About-scroll">トレーナー紹介</li>
+					<li class="Menu-list Font-ProN Profile-scroll">トレーナー紹介</li>
+					<li class="Menu-list Font-ProN Step-scroll">パーソナルの流れ</li>
 					<li class="Menu-list Font-ProN FAQ-scroll">よくある質問</li>
-					<li class="Menu-list Font-ProN Contact-scroll">お問い合わせ</li>
+					<li class="Menu-list Font-ProN Contact-scroll"><a href="confirm.php">無料カウンセリング</a></li>
 				</ul>
 				<a href="https://www.instagram.com/t.o.mspider/" target="_blank"><img class="Instagram" src="img/Instagram.png"></a>
 				<a href="https://twitter.com/tomvelspider" target="_blank"><img class="Twitter" src="img/Twitter.png"></a>
@@ -59,7 +59,7 @@
 	</header>
 	<main>
 		<section class="content">
-			<h2 class="Font-ProN">あなたの理想の<br>身体を追求します</h2>
+            <h2 class="Font-ProN">あなたの理想の<br>身体を追求します</h2>
 			<div class="iconBack">
 				<i class="fas fa-dumbbell fa-4x" ></i>
 				<p class="iconName Font-ProN">ボディメイク</p>
@@ -79,7 +79,7 @@
 				<p class="content-text">腰痛治療・神経痛治療・眼精疲労治療</p>
 			</div>
 		</section>
-		<h1 class="Font-ProN" id="About">トレーナー紹介</h1>
+		<h1 class="Font-ProN" id="Profile">トレーナー紹介</h1>
 		<div class="Profile">
 			<img class="animationTarget taroimg" src="img/taro2.jpg" alt="">
 			<div class="Profile-container Font-ProN animationTarget">
@@ -89,7 +89,7 @@
 			</div>
 		</div>
 		<section>
-			<h1 class="Font-ProN">全体の流れ</h1>
+			<h1 class="Font-ProN" id="Step">全体の流れ</h1>
 			<div class="step Font-ProN">
 				<ul class="step-lists">
 
@@ -159,63 +159,29 @@
 			</div>
 		</div>
 	</section>
-		<!-- FAQアコーディオン -->
-		<div class="FAQ" id="FAQ">
-			<h1 class="FAQ-title Font-Std">FAQ</h1>
-			<ul class="FAQ-lists">
+	<!-- FAQアコーディオン -->
+	<div class="FAQ" id="FAQ">
+		<h1 class="FAQ-title Font-Std">FAQ</h1>
+		<ul class="FAQ-lists">
+			<li class="FAQ-list Font-ProN">
+				<h2 class="question">よくある質問</h2>
+				<span class="FAQ-mark">+</span>
+				<p class="answer">答え</p>
+			</li>
+			<li class="FAQ-list Font-ProN">
+				<h2 class="question">よくある質問</h2>
+				<span class="FAQ-mark">+</span>
+				<p class="answer">答え</p>				</li>
 				<li class="FAQ-list Font-ProN">
-					<h2 class="question">よくある質問</h2>
-					<span class="FAQ-mark">+</span>
-					<p class="answer">答え</p>
-				</li>
-				<li class="FAQ-list Font-ProN">
-					<h2 class="question">よくある質問</h2>
-					<span class="FAQ-mark">+</span>
-					<p class="answer">答え</p>
-				</li>
-				<li class="FAQ-list Font-ProN">
-					<h2 class="question">よくある質問</h2>
-					<span class="FAQ-mark">+</span>
-					<p class="answer">答え</p>
-				</li>
-			</ul>
-		</div>
-		<!-- お問い合わせ -->
-		<section class="contact-form">
-		</section>
-		<div class="Reservation">
-			<!-- 予約ボタン -->
-			<div class="button Font-ProN Reservation-show">まずは無料カウンセリングから！</div>
-			<!-- 予約フォーム背景 -->
-			<div class="Reservation-modal-overlay" id="Reservation-modal">
-				<!-- 予約フォーム本体 -->
-				<div class="Reservation-modal-body Font-ProN">
-					<form class="Form-container">
-						<label class="Personal-menu" name="Menu">メニュー　　
-							<select required="">
-								<option></option>
-								<option>60分コース ￥6,000-</option>
-							</select>
-						</label>
-						<label class="Place" name="Place">ご希望の場所　
-							<select required="">
-								<option></option>
-								<option>渋谷（宮益坂）</option>
-								<option>恵比寿（西口駅前）</option>
-								<option>北参道（駅徒歩2分）</option>
-								<option>千駄ヶ谷（駅徒歩2分）</option>
-							</select>
-						</label>
-						<label class="Date" name="Date">ご希望のお日にち
-							<input type="date">
-						</label>
-						<button class="Form-btn">送信</button>
-					</form>
-					<!-- クローズボタン -->
-        			<i class="fa fa-times Close-button" id="Close-modal"></i>
-				</div>
-			</div>
-		</div>
-<script src="script.js"></script>
+				<h2 class="question">よくある質問</h2>
+				<span class="FAQ-mark">+</span>
+				<p class="answer">答え</p>
+			</li>
+		</ul>
+	</div>
+		<!-- カウンセリング -->
+    <button class="button Font-ProN"><a href="confirm.php">まずは無料カウンセリングから！</a></button>
+    
+    <script src="script.js"></script>
 </body>
 </html>
