@@ -12,6 +12,11 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 input, select {
   outline: none;
 }
@@ -36,8 +41,8 @@ input, select {
   top: 5%;
   right: 5%;
   border-radius: 3px;
-  z-index: 10;
   box-shadow: 0px 0px 8px grey;
+  z-index: 9;
 }
 
 /* メニューボタンのライン */
@@ -87,10 +92,10 @@ background:white;
 	bottom: 0;
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.2);
-	z-index: 8;
 	opacity: 0;
 	visibility: hidden;
-	transition: .9s;
+  transition: .9s;
+  z-index: 8;
 }
 .Spmenu-container.active {
 	opacity: 1;
@@ -102,7 +107,7 @@ background:white;
   width: 70%;
   height: 100%;
   background: white;
-  z-index: 9;
+
   transform: translateX(100%);
   transition: .7s;
 }
@@ -117,7 +122,7 @@ ul.Menu-lists {
 
 .Menu-list {
 	font-size: 23px;
-  padding-top: 21px;
+  padding-top: 23px;
 }
 
 img.Instagram {
@@ -333,7 +338,6 @@ p.Profile-text {
   color: black;
   font-size: 28px;
   margin: 0;
-  z-index: 7;
   position: absolute;
   top: 85%;
   left: 4%;
@@ -354,7 +358,6 @@ p.Profile-text {
   color: black;
   font-size: 28px;
   margin: 0;
-  z-index: 7;
   position: absolute;
   top: 86%;
   right: 4%;
@@ -494,20 +497,19 @@ h2.Person {
   left: 98%;
 }
 
-.Reservation {
-  height: 100px;
-}
-
-div.button {
+.button {
+  display: block;
   font-size: 16px;
   text-align: center;
-  width: 30%;
+  width: 73%;
   margin: 50px auto 50px auto;
   white-space: nowrap;
   padding: 18px 140px 18px 20px;
   background-color: #ffc500;
   cursor: pointer;
   opacity: 0.8;
+  border: none;
+  outline: none;
   border-radius: 10px;
   box-shadow: 0px 7px #ffaf00;
 }
@@ -521,73 +523,4 @@ div.button {
   top: 7px;
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-.Reservation-modal-overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1;
-  width: 100%;
-  height: 120%;
-  display: none;
-}
-
-.Reservation-modal-body {
-  position: relative;
-  position: absolute;
-  top: 25%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 90%;
-  background-color: #e6ecf0;
-  border-radius: 10px;
-  height: 250px;
-  text-align: center;
-}
-
-i.Close-button {
-  position: absolute;
-  top: 5%;
-  left: 90%;
-  font-size: 27px;
-}
-
-.Personal-menu {
-  position: absolute;
-  top: 20%;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.Place {
-  position: absolute;
-  top: 37%;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.Date {
-  position: absolute;
-  top: 54%;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-.Form-btn {
-  position: absolute;
-  top: 76%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 17%;
-  height: 12%;
-  cursor: pointer;
 }
