@@ -326,12 +326,15 @@ p.Profile-text {
 
 .step-list {
   opacity: 0;
-  transition: 3s;
+  transform: translateY(-10px);
+  transition: 2s;
   position: relative;
 }
 
 .step-list.show {
   opacity: 1;
+  transform: none;
+  transform: translateY(0%);
 }
 
 .step-lists > li:nth-of-type(odd) > h2 {
@@ -380,8 +383,8 @@ p.Profile-text {
   font-size: 14px;
   line-height: 2em;
   opacity: 0;
-  transition: 2.5s;
   transform: translateY(10px);
+  transition: 2s;
 }
 
 .step-text.show {
