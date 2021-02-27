@@ -95,19 +95,19 @@ $(function() {
 			},'1000');
 		});
 	
-		$('.About-scroll').click(function() {
-			$("html,body").animate({scrollTop:$('#About').offset().top -70
+		$('.Profile-scroll').click(function() {
+			$("html,body").animate({scrollTop:$('#Profile').offset().top -70
+			},'1000');
+		});
+	
+		$('.Step-scroll').click(function() {
+			$("html,body").animate({scrollTop:$('#Step').offset().top -20
 			},'1000');
 		});
 	
 		$('.FAQ-scroll').click(function() {
 			$("html,body").animate({scrollTop:$('#FAQ').offset().top -100
 			},'1000');
-		});
-	
-		$('.Contact-scroll').click(function() {
-			$("html,body").animate({scrollTop:$('#Contact').offset().top -100
-			},'1000','ease-in-out');
 		});
 	});
 });
