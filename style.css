@@ -198,7 +198,7 @@ section h2 {
 
 .iconBack {
   width: 85%;
-  height: 420px;
+  height: 386px;
   background-color: white;
   border-radius: 15px;
   margin: 50px auto;
@@ -241,19 +241,23 @@ main h1 {
 }
 
 img.taroimg {
-  width: 50%;
-  border-radius: 10%;
-  display: block;
-  margin-right: 15px;
-  margin-left: auto;
-  opacity: 0;
-  transform:translate(20px, -20px);
-  transition: 1.5s;
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    transition: 1.5s;
+    opacity: 0;
+    transform: translateX(-100%);
 }
 
 main img.show {
   opacity: 1;
   transform: none;
+}
+
+section.content {
+  margin-bottom: 70px;
 }
 
 img.iconImg {
@@ -262,40 +266,41 @@ img.iconImg {
 
 .Profile-container {
   width: 50%;
-  background-color: white;
-  height: 220px;
+  color: white;
+  margin: 0 auto;
   border-radius: 10%;
   opacity: 0;
-  -webkit-transform: translate(-20px, -20px);
-          transform: translate(-20px, -20px);
+  margin: 0 auto;
+  transform: translateX(100%);
   -webkit-transition: 1.5s;
   transition: 1.5s;
 }
 
 .Profile-container.show {
   opacity: 1;
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 
 .Profile {
-  position: relative;
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 55px;
 }
 
 h2.Profile-name {
-  font-size: 24px;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+p.Profile-job {
+  font-size: 19px;
+  margin-top: 0;
+  white-space: nowrap;
 }
 
 p.Profile-text {
   font-size: 16px;
-}
-
-.Profile-container {
-  position: absolute;
-  top: 70%;
-  left: 5%;
+  margin: 0;
 }
 
 .step {
@@ -315,11 +320,13 @@ p.Profile-text {
 }
 
 .step-list {
+  opacity: 0;
+  transition: 3s;
   position: relative;
-
 }
 
-.stepImg {
+.step-list.show {
+  opacity: 1;
 }
 
 .step-lists > li:nth-of-type(odd) > h2 {
@@ -364,18 +371,19 @@ p.Profile-text {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.step-lists > p:nth-of-type(odd) {
+.step-text {
   margin: 60px auto 20px auto;
   width: 85%;
   font-size: 14px;
   line-height: 2em;
+  opacity: 0;
+  transition: 2.5s;
+  transform: translateY(10px);
 }
 
-.step-lists > p:nth-of-type(even) {
-  margin: 60px auto 20px auto;
-  width: 85%;
-  font-size: 14px;
-  line-height: 2em;
+.step-text.show {
+  opacity: 1;
+  transform: none;
 }
 
 .Customer-title {
