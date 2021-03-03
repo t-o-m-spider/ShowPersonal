@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">　
+<head>
+
+	<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- レスポンシブ -->
+	<link rel="stylesheet" href="responsive.css">
+
+	<!-- jQuery読み込み -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+	<!-- タイトル -->
+	<title>ShowPersonal</title>
+
+	<!-- 説明 -->
+	<meta name="discription" content="パーソナルトレーナ　吉藤翔太郎のWebサイトです">
+
+	<!-- FontAwesome読み込み -->
+    <script src="https://kit.fontawesome.com/4a97e7c20a.js" crossorigin="anonymous"></script>
+    	
+</head>
+<body>
+    <section class="Confirm Font-ProN">
+        <h1>無料カウンセリング申込み</h1>
+        <p class="Confirm-text">カウンセリングではZoomを用いて<br>
+        オンラインでさせて頂きます（30分ほど）</p>
+        <form action="send.html" method="post">
+            <section class="nameForm">
+                <p class="inputText">お名前(カナ)</p>
+                <div>セイ　<input type="text" name="familyName"></div>
+                <div>メイ　<input type="text" name="firstName"></div>
+            </section>        
+            
+            <p class="inputText">メールアドレス</p>
+            <div>　　　<input type="text" name="email1"></div>
+            <p class="inputText">メールアドレス（確認）</p>
+            <div>　　　<input type="text" name="email2"></div>
+            <button class="button">送信</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
