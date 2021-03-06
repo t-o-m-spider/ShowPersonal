@@ -1,3 +1,41 @@
+<?php
+$error = [];
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // 文字列のフィルタリング（危険性の高い文字を消す）
+    $post = filter_input_array(INPUT_POST,FILTER_SANITIZE_STRING);
+    // フォームの送信時にエラーをチェックする
+if ($post['familyName'] === '') {
+    $error['familyName'] = 'blank';
+}
+
+if ($post['firstName'] === '') {
+    $error['firstName'] = 'blank';
+}
+
+if ($post['email1'] === '') {
+    $error['email1'] = 'blank';
+} elseif (!filter_var($post['email1'], FILTER_VALIDATE_EMAIL)) {
+    $error['email1'] = 'email';
+}
+
+if ($post['email2'] === '') {
+    $error['email2'] = 'blank';
+} elseif (!filter_var($post['email2'], FILTER_VALIDATE_EMAIL)) {
+    $error['email2'] = 'email';
+}
+
+if (count($error) === 0) {
+    // エラーがないので確認画面に移動
+    header('Location: send.php');
+    exit();
+}
+
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="ja">　
 <head>
@@ -34,18 +72,60 @@
         <h1>無料カウンセリング申込み</h1>
         <p class="Confirm-text">カウンセリングではZoomを用いて<br>
         オンラインでさせて頂きます（30分ほど）</p>
-        <form action="send.html" method="POST">
+        <form action="" method="post" novalidate>
             <section class="nameForm">
                 <p class="inputText">お名前(カナ)</p>
-                <div>セイ　<input type="text" name="familyName"></div>
-                <div>メイ　<input type="text" name="firstName"></div>
+
+                <!-- 苗字 -->
+                <div>セイ　<input type="text" name="familyName" value="<?php echo htmlspecialchars($post['familyName']); ?>" required></div>
+
+                <!-- エラーメッセージを表示 -->
+                <?php if ($error['familyName'] === 'blank'): ?>
+                    <p class="errorMessage">必須記入項目です</p>
+                <?php endif; ?>
+                
+                <!-- 名前 -->
+                <div>メイ　<input type="text" name="firstName" value="<?php echo htmlspecialchars($post['firstName']); ?>" required></div>
+
+                <!-- エラーメッセージを表示 -->
+                <?php if ($error['firstName'] === 'blank'): ?>
+                    <p class="errorMessage">必須記入項目です</p>
+                <?php endif; ?>
+
             </section>        
             
             <p class="inputText">メールアドレス</p>
-            <div>　　　<input type="text" name="email1"></div>
+            <div>　　　<input type="text" name="email1" value="<?php echo htmlspecialchars($post['email1']); ?>" required></div>
+            
+            <!-- エラーメッセージを表示 -->
+
+            <!-- 未記入を判定する -->
+            <?php if ($error['email1'] === 'blank'): ?>
+                    <p class="errorMessage">必須記入項目です</p>
+                    <?php endif; ?>
+
+            <!-- メールアドレスの書式に従っているか判定する -->
+            <?php if ($error['email1'] === 'email'): ?>
+                    <p class="errorMessage">メールアドレスを正しくご記入ください</p>
+                    <?php endif; ?>
+
+
             <p class="inputText">メールアドレス（確認）</p>
-            <div>　　　<input type="text" name="email2"></div>
-            <a class="button" href="send.html">送信</a>
+            <div>　　　<input type="text" name="email2" value="<?php echo htmlspecialchars($post['email2']); ?>" required></div>
+            
+            <!-- エラーメッセージを表示 -->
+
+            <!-- 未記入を判定する -->
+            <?php if ($error['email2'] === 'blank'): ?>
+                    <p class="errorMessage">必須記入項目です</p>
+                <?php endif; ?>
+            
+            <!-- メールアドレスの書式に従っているか判定する -->
+             <?php if ($error['email1'] === 'email'): ?>
+                    <p class="errorMessage">メールアドレスを正しくご記入ください</p>
+                    <?php endif; ?>
+
+            <button class="button">送信</button>
         </form>
     </section>
     <script src="script.js"></script>
