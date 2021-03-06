@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: #386584;
+  height: 900px;
 }
 
 .body {
@@ -483,14 +484,17 @@ h2.Person {
 }
 
 .FAQ-list {
-  font-size: 13px;
+  font-size: 12px;
   position: relative;
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
+  white-space: nowrap;
 }
 
 .answer {
+  font-size: 11px;
   display: none;
+  white-space: nowrap;
 }
 
 .FAQ-mark {
@@ -533,7 +537,7 @@ h2.Person {
     margin: 0 auto;
     border-radius: 2%;
     text-align: center;
-    height: 700px;
+    height: 830px;
 }
 
 .Confirm h1 {
@@ -550,7 +554,6 @@ h2.Person {
 form {
     width: 80%;
     margin: 0 auto;
-    height: ;
 }
 
 form p {
@@ -566,7 +569,7 @@ input {
 }
 
 form > section > div {
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 form > section.nameForm {
@@ -585,4 +588,15 @@ form > section.nameForm {
 
 .sendText {
   margin-top: 40px;
+}
+
+.errorMessage {
+  font-size: 15px;
+  color: red;
+  margin: 5px 0 0 0;
+  text-align: center;
+}
+
+.button-container {
+  height: 140px;
 }
